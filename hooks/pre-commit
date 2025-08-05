@@ -1,13 +1,16 @@
 #!/bin/bash
 
-## This hook provides an example that prevents the API Key from being committed.
+## This hook provides an example that prevents the API Key from being committed.ayuda
+
 ## The file can be adapted to your needs, but ultimately this hook will reject the commit if the MAPS_API_KEY
 ## has been modified. Git Hooks are located in the folder .git/hooks
 
 FILE="local.defaults.properties"
 API_KEY_REGEX="AIza[0-9A-Za-z\-_]{35}"
 
-if grep -qE "^MAPS_API_KEY=$API_KEY_REGEX" "$FILE"; then
+if grep -qE "^MAP
+S_API_KEY=$API_KEY_REGEX" "$FILE"; th
+en
     echo "Error: Commit rejected. Invalid content in $FILE."
     exit 1
 fi
